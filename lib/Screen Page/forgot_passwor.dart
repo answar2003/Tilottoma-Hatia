@@ -51,20 +51,31 @@ class ForgotPassword extends StatelessWidget {
                   ),
 
                   //For TextField of forgot password
-                  SizedBox(
+                  Container(
                     width: 390,
                     height: 55,
+                    decoration: BoxDecoration(
+                      color: Colors.white60,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 1,
+                          blurRadius: 10,
+                          offset: Offset(2, 4),
+                        ),
+                      ],
+                    ),
                     child: TextField(
                       decoration: InputDecoration(
-                        fillColor: Colors.white54,
-                        prefixIcon:
-                            const Icon(Icons.email, color: Color(0xFF26457C)),
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
-                            borderSide: BorderSide.none),
-                        hintText: 'Password',
-                        hintStyle: TextStyle(fontFamily: montRegular),
-                      ),
+                          fillColor: Colors.white54,
+                          prefixIcon:
+                              const Icon(Icons.email, color: Color(0xFF26457C)),
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(12),
+                              borderSide: BorderSide.none),
+                          hintText: 'Enter your Email Address',
+                          hintStyle: TextStyle(fontFamily: montRegular)),
                     ),
                   ),
                   SizedBox(

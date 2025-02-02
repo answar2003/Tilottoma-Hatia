@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_booking/Screen%20Page/button_nav_bar.dart';
 import 'package:ticket_booking/Screen%20Page/create_account.dart';
 import 'package:ticket_booking/Screen%20Page/forgot_passwor.dart';
 import 'package:ticket_booking/Screen%20Page/home_screen.dart';
@@ -53,31 +54,32 @@ class LoginScreen extends StatelessWidget {
                   ),
                   //For TextField of username or email
                   Container(
-                      width: 390,
-                      height: 55,
-                      decoration: BoxDecoration(
-                        color: Colors.white60,
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.2),
-                            spreadRadius: 1,
-                            blurRadius: 10,
-                            offset: Offset(2, 4),
-                          ),
-                        ],
-                      ),
-                      child: TextField(
-                        decoration: InputDecoration(
-                            fillColor: Colors.white54,
-                            prefixIcon: const Icon(Icons.person,
-                                color: Color(0xFF26457C)),
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(12),
-                                borderSide: BorderSide.none),
-                            hintText: 'Username Or Email',
-                            hintStyle: TextStyle(fontFamily: montRegular)),
-                      )),
+                    width: 390,
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Colors.white60,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 1,
+                          blurRadius: 10,
+                          offset: Offset(2, 4),
+                        ),
+                      ],
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          fillColor: Colors.white54,
+                          prefixIcon: const Icon(Icons.person,
+                              color: Color(0xFF26457C)),
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(12),
+                              borderSide: BorderSide.none),
+                          hintText: 'Username Or Email',
+                          hintStyle: TextStyle(fontFamily: montRegular)),
+                    ),
+                  ),
                   SizedBox(
                     height: 20,
                   ),
@@ -144,7 +146,7 @@ class LoginScreen extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => CreateAccount()));
+                              builder: (context) => ButtonNavBar()));
                     },
                     child: Center(
                       child: Container(
@@ -206,7 +208,23 @@ class LoginScreen extends StatelessWidget {
                     children: [
                       Container(
                         decoration:
-                            BoxDecoration(color: Color(0x00ffffff), boxShadow: [
+                            BoxDecoration(color: Colors.white, boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.3),
+                            spreadRadius: 2,
+                            blurRadius: 20,
+                            offset: Offset(0, 4),
+                          )
+                        ]),
+                        width: 65,
+                        height: 31,
+                        child: Image.asset(
+                          'assets/images/facebook.png',
+                        ),
+                      ),
+                      Container(
+                        decoration:
+                            BoxDecoration(color: Colors.white, boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.3),
                             spreadRadius: 2,
@@ -217,12 +235,12 @@ class LoginScreen extends StatelessWidget {
                         width: 65,
                         height: 31,
                         child: Image.asset(
-                          'assets/images/TwitterX.png',
+                          'assets/images/apple.png',
                         ),
                       ),
                       Container(
                         decoration:
-                            BoxDecoration(color: Color(0x00ffffff), boxShadow: [
+                            BoxDecoration(color: Colors.white, boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.3),
                             spreadRadius: 2,
@@ -233,29 +251,12 @@ class LoginScreen extends StatelessWidget {
                         width: 65,
                         height: 31,
                         child: Image.asset(
-                          'assets/images/TwitterX.png',
-                        ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(0, 255, 252, 252),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey.withOpacity(0.3),
-                                spreadRadius: 2,
-                                blurRadius: 5,
-                                offset: Offset(0, 4),
-                              )
-                            ]),
-                        width: 65,
-                        height: 31,
-                        child: Image.asset(
-                          'assets/images/TwitterX.png',
+                          'assets/images/google.png',
                         ),
                       ),
                       Container(
                         decoration:
-                            BoxDecoration(color: Color(0x00ffffff), boxShadow: [
+                            BoxDecoration(color: Colors.white, boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.3),
                             spreadRadius: 2,

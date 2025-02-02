@@ -79,14 +79,14 @@ flutter:
       fonts:
         - asset: assets/fonts/inika/Inika-Regular.ttf
         - asset: assets/fonts/inika/Inika-Bold.ttf
-    - family: Urbanist
-      fonts:
-        - asset: assets/fonts/urbanist/Urbanist-Regular.ttf
-        - asset: assets/fonts/urbanist/Urbanist-Bold.ttf
-    - family: Montserrat
-      fonts:
-        - asset: assets/fonts/montserrat/Montserrat-Regular.ttf
-        - asset: assets/fonts/montserrat/Montserrat-Bold.ttf
+    # - family: Urbanist
+    #   fonts:
+    #     - asset: assets/fonts/Urbanist/Urbanist-Regular.ttf
+    #     - asset: assets/fonts/Urbanist/Urbanist-Bold.ttf
+    # - family: Montserrat
+    #   fonts:
+    #     - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
+    #     - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
 
   # fonts:
   #   - family: Schyler
