@@ -103,12 +103,12 @@ class ProfilePage extends StatelessWidget {
                         builder: (context) => LaunchLocationPage()));
               },
               child: Container(
-                child: Center(
-                  child: Text("Where is my Tarin Page"),
-                ),
                 height: 40,
                 width: double.infinity,
                 color: Colors.blue,
+                child: Center(
+                  child: Text("Where is my Tarin Page"),
+                ),
               ),
             ),
             SizedBox(
@@ -120,12 +120,12 @@ class ProfilePage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => ETicketPage()));
               },
               child: Container(
-                child: Center(
-                  child: Text("E ticket Page"),
-                ),
                 height: 40,
                 width: double.infinity,
                 color: Colors.yellow,
+                child: Center(
+                  child: Text("E ticket Page"),
+                ),
               ),
             ),
           ],

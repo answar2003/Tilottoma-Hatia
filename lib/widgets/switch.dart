@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ThreeButtonSwitch extends StatefulWidget {
+  const ThreeButtonSwitch({super.key});
+
   @override
   _ThreeButtonSwitchState createState() => _ThreeButtonSwitchState();
 }

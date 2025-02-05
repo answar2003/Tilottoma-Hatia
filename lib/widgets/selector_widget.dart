@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SelectionButtons extends StatefulWidget {
+  const SelectionButtons({super.key});
+
   @override
   _SelectionButtonsState createState() => _SelectionButtonsState();
 }
