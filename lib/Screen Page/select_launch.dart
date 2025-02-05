@@ -27,7 +27,10 @@ class SelectLaunch extends StatelessWidget {
             children: [
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 20, top: 40),
+                  padding: const EdgeInsets.only(
+                    left: 20,
+                    top: 40,
+                  ),
                   child: Row(
                     children: [
                       GestureDetector(
@@ -70,12 +73,12 @@ class SelectLaunch extends StatelessWidget {
                     child: Image.asset('assets/images/image.png'),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 10),
+                    padding: const EdgeInsets.only(left: 5, right: 5),
                     child: Row(
                       children: [
                         Container(
-                          height: 80,
-                          width: 80,
+                          height: 70,
+                          width: 70,
                           decoration: BoxDecoration(
                             boxShadow: [
                               BoxShadow(
@@ -214,72 +217,75 @@ class SelectLaunch extends StatelessWidget {
               SizedBox(height: 20),
 
               // Ticket Cards
-              Column(
-                children: [
-                  GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => DetailsPage()));
-                      },
-                      child: TicketCard(
-                          endText: 'Dhaka',
-                          bottomColor: Color(0xFFCE3B16),
-                          DuTimeColor: Color(0xFFCE3B16),
-                          DutTime: '16 hrs',
-                          startTime: '12:30 AM',
-                          startText: 'Hatia',
-                          endTime: '4:30 PM',
-                          startColor: Color(0xFFCE3B16),
-                          endColor: Color(0xFFFBBB00),
-                          bottomText: 'farhan 7',
-                          middleImage: 'assets/images/imageTwo.png',
-                          price: 'ট 1500')),
-                  SizedBox(height: 15),
-                  GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => DetailsPage()));
-                      },
-                      child: TicketCard(
-                          endText: 'Dhaka',
-                          bottomColor: Color(0xFF0C85B6),
-                          DuTimeColor: Color(0xFF0C85B6),
-                          DutTime: '16 hrs',
-                          startTime: '9:50 AM',
-                          startText: 'Hatia',
-                          endTime: '12:50 PM',
-                          startColor: Color(0xFF0C85B6),
-                          endColor: Color(0xFFFBBB00),
-                          bottomText: 'WAG',
-                          middleImage: 'assets/images/imageThree.png',
-                          price: 'ট 500')),
-                  SizedBox(height: 15),
-                  GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => DetailsPage()));
-                      },
-                      child: TicketCard(
-                          endText: 'Monpura',
-                          bottomColor: Color(0xFFCE3B16),
-                          DuTimeColor: Color(0xFFCE3B16),
-                          DutTime: '02 hrs',
-                          startTime: '10:20 AM',
-                          startText: 'Hatia',
-                          endTime: '12:20 PM',
-                          startColor: Color(0xFFCE3B16),
-                          endColor: Color(0xFF26457C),
-                          bottomText: 'Tasrif 04',
-                          middleImage: 'assets/images/imageFour.png',
-                          price: 'ট 300')),
-                  SizedBox(height: 15),
-                ],
+              Padding(
+                padding: const EdgeInsets.only(right: 15),
+                child: Column(
+                  children: [
+                    GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DetailsPage()));
+                        },
+                        child: TicketCard(
+                            endText: 'Dhaka',
+                            bottomColor: Color(0xFFCE3B16),
+                            DuTimeColor: Color(0xFFCE3B16),
+                            DutTime: '16 hrs',
+                            startTime: '12:30 AM',
+                            startText: 'Hatia',
+                            endTime: '4:30 PM',
+                            startColor: Color(0xFFCE3B16),
+                            endColor: Color(0xFFFBBB00),
+                            bottomText: 'farhan 7',
+                            middleImage: 'assets/images/imageTwo.png',
+                            price: 'ট 1500')),
+                    SizedBox(height: 15),
+                    GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DetailsPage()));
+                        },
+                        child: TicketCard(
+                            endText: 'Dhaka',
+                            bottomColor: Color(0xFF0C85B6),
+                            DuTimeColor: Color(0xFF0C85B6),
+                            DutTime: '16 hrs',
+                            startTime: '9:50 AM',
+                            startText: 'Hatia',
+                            endTime: '12:50 PM',
+                            startColor: Color(0xFF0C85B6),
+                            endColor: Color(0xFFFBBB00),
+                            bottomText: 'WAG',
+                            middleImage: 'assets/images/imageThree.png',
+                            price: 'ট 500')),
+                    SizedBox(height: 15),
+                    GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DetailsPage()));
+                        },
+                        child: TicketCard(
+                            endText: 'Monpura',
+                            bottomColor: Color(0xFFCE3B16),
+                            DuTimeColor: Color(0xFFCE3B16),
+                            DutTime: '02 hrs',
+                            startTime: '10:20 AM',
+                            startText: 'Hatia',
+                            endTime: '12:20 PM',
+                            startColor: Color(0xFFCE3B16),
+                            endColor: Color(0xFF26457C),
+                            bottomText: 'Tasrif 04',
+                            middleImage: 'assets/images/imageFour.png',
+                            price: 'ট 300')),
+                    SizedBox(height: 15),
+                  ],
+                ),
               ),
             ],
           ),

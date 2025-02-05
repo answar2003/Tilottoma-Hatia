@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_booking/Screen%20Page/login_screen.dart';
 import 'package:ticket_booking/widgets/custom_textField.dart';
+import 'package:ticket_booking/widgets/custom_text_fiels_home.dart';
 import 'package:ticket_booking/widgets/switch.dart';
 
 class MainHomePage extends StatelessWidget {
@@ -11,7 +12,7 @@ class MainHomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: EdgeInsets.only(top: 20, left: 10),
+          padding: EdgeInsets.only(top: 20, left: 5, right: 5),
           child: Container(
             child: SingleChildScrollView(
               child: Column(
@@ -122,60 +123,55 @@ class MainHomePage extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 20, right: 10),
-                          child: Row(
+                          child: Column(
                             children: [
-                              SizedBox(
-                                height: 50,
-                                width: 175,
-                                child: CustomTextField(
-                                    colorM: null,
-                                    colorS: Colors.white,
-                                    prefixIcon: Image.asset(
-                                        'assets/images/Calender.png'),
-                                    hintSub: '26/May/2023',
-                                    labelHint: 'Departure'),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  CustomDetailsTextFieldHome(
+                                    labelText: 'Departure',
+                                    hintText: '26/May/2023',
+                                    iconPath: 'assets/images/Calender.png',
+                                    textColor: Colors.white,
+                                    borderColor: Colors.white,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  CustomDetailsTextFieldHome(
+                                    labelText: 'Return',
+                                    hintText: '+ Add Return Date',
+                                    iconPath: 'assets/images/Clock.png',
+                                    textColor: Colors.white,
+                                    borderColor: Colors.white,
+                                  ),
+                                ],
                               ),
                               SizedBox(
-                                height: 50,
-                                width: 175,
-                                child: CustomTextField(
-                                  colorM: null,
-                                  colorS: Colors.white,
-                                  prefixIcon: null,
-                                  hintSub: '+ Add Return Date',
-                                  labelHint: 'Return',
-                                ),
+                                height: 30,
                               ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 20, right: 10),
-                          child: Row(
-                            children: [
-                              SizedBox(
-                                height: 50,
-                                width: 175,
-                                child: CustomTextField(
-                                    colorM: null,
-                                    colorS: Colors.white,
-                                    prefixIcon: null,
-                                    hintSub: '1 Adult',
-                                    labelHint: 'Traveller'),
-                              ),
-                              SizedBox(
-                                height: 50,
-                                width: 175,
-                                child: CustomTextField(
-                                  colorM: null,
-                                  colorS: Colors.white,
-                                  prefixIcon: null,
-                                  hintSub: 'General Quata',
-                                  labelHint: 'Quoata',
-                                ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  CustomDetailsTextFieldHome(
+                                    labelText: 'Qouta',
+                                    hintText: 'General Quota',
+                                    textColor: Colors.white,
+                                    borderColor: Colors.white,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  CustomDetailsTextFieldHome(
+                                    labelText: 'Coach',
+                                    hintText: 'S1',
+                                    iconPath: 'assets/images/Railcar.png',
+                                    textColor: Colors.white,
+                                    borderColor: Colors.white,
+                                  ),
+                                ],
                               ),
                             ],
                           ),

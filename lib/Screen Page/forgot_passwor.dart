@@ -11,7 +11,7 @@ class ForgotPassword extends StatelessWidget {
       child: Scaffold(
         body: Container(
           child: Padding(
-            padding: const EdgeInsets.only(top: 20, left: 10),
+            padding: const EdgeInsets.only(top: 20, left: 10, right: 10),
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

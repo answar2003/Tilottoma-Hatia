@@ -34,7 +34,7 @@ class LaunchTiming extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      width: 40,
+                      width: 20,
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

@@ -14,7 +14,7 @@ class LoginScreen extends StatelessWidget {
       child: Scaffold(
         body: Container(
           child: Padding(
-            padding: const EdgeInsets.only(top: 20, left: 10),
+            padding: const EdgeInsets.only(top: 20, left: 10, right: 10),
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -118,7 +118,7 @@ class LoginScreen extends StatelessWidget {
                   Row(
                     children: [
                       SizedBox(
-                        width: 250,
+                        width: 220,
                       ),
                       GestureDetector(
                         onTap: () {
