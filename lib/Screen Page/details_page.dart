@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_booking/Screen%20Page/button_nav_bar.dart';
+import 'package:ticket_booking/Screen%20Page/seat_booking_page.dart';
 import 'package:ticket_booking/widgets/custom_details_textField.dart';
 import 'package:ticket_booking/widgets/ticket_card.dart';
 
@@ -334,7 +335,7 @@ class DetailsPage extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ButtonNavBar()));
+                                  builder: (context) => SeatBookingPage()));
                         },
                         child: Center(
                           child: Container(

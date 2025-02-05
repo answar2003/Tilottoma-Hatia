@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_booking/Screen%20Page/login_screen.dart';
 import 'package:ticket_booking/widgets/custom_textField.dart';
+import 'package:ticket_booking/widgets/switch.dart';
 
 class MainHomePage extends StatelessWidget {
   const MainHomePage({super.key});
@@ -62,50 +63,7 @@ class MainHomePage extends StatelessWidget {
                   ),
                   //For select bar
 
-                  Container(
-                    width: 390,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Color(0xFF26457C)),
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 5, right: 5),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 3),
-                            child: Container(
-                              height: 42,
-                              width: 100,
-                              decoration: BoxDecoration(
-                                color: Color(0xFF26457C),
-                                borderRadius: BorderRadius.circular(50),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "One way",
-                                  style: TextStyle(
-                                      fontSize: 18, color: Colors.white),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Text(
-                            "Round",
-                            style: TextStyle(
-                                fontSize: 18, color: Color(0xffff999999)),
-                          ),
-                          Text(
-                            "Multi-wharf",
-                            style: TextStyle(
-                                fontSize: 18, color: Color(0xffff999999)),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
+                  ThreeButtonSwitch(),
                   SizedBox(
                     height: 20,
                   ),

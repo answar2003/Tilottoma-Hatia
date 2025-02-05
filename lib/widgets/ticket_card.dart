@@ -18,7 +18,7 @@ class TicketCard extends StatelessWidget {
   final String price;
 
   const TicketCard({
-    Key? key,
+    super.key,
     required this.endText,
     required this.bottomColor,
     required this.DuTimeColor,
@@ -31,7 +31,7 @@ class TicketCard extends StatelessWidget {
     required this.bottomText,
     required this.middleImage,
     required this.price,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

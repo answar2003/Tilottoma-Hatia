@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_booking/Screen%20Page/e_ticket.dart';
+import 'package:ticket_booking/Screen%20Page/launch_location_page.dart';
+import 'package:ticket_booking/Screen%20Page/launch_timing.dart';
+import 'package:ticket_booking/Screen%20Page/location_trac_page.dart';
 import 'package:ticket_booking/Screen%20Page/main_home.dart';
 import 'package:ticket_booking/Screen%20Page/select_launch.dart';
 
@@ -16,8 +20,10 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
   final List<Widget> _pages = [
     MainHomePage(),
     SelectLaunch(),
-    OfferPage(),
-    InboxPage(),
+    LocationTracPage(),
+    // OfferPage(),
+    LaunchTiming(),
+    // InboxPage(),
     ProfilePage(),
   ];
 
@@ -61,29 +67,70 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
   }
 }
 
-class OfferPage extends StatelessWidget {
-  const OfferPage({super.key});
+// class OfferPage extends StatelessWidget {
+//   const OfferPage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Center(child: Text('Offer Page'));
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Center(child: Text('Offer Page'));
+//   }
+// }
 
-class InboxPage extends StatelessWidget {
-  const InboxPage({super.key});
+// class InboxPage extends StatelessWidget {
+//   const InboxPage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Center(child: Text('Inbox Page'));
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Center(child: Text('Inbox Page'));
+//   }
+// }
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('Profile Page'));
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.only(top: 80),
+        child: Column(
+          children: [
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LaunchLocationPage()));
+              },
+              child: Container(
+                child: Center(
+                  child: Text("Where is my Tarin Page"),
+                ),
+                height: 40,
+                width: double.infinity,
+                color: Colors.blue,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ETicketPage()));
+              },
+              child: Container(
+                child: Center(
+                  child: Text("E ticket Page"),
+                ),
+                height: 40,
+                width: double.infinity,
+                color: Colors.yellow,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

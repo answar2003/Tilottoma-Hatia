@@ -8,13 +8,13 @@ class CustomDetailsTextField extends StatelessWidget {
   final Color borderColor;
 
   const CustomDetailsTextField({
-    Key? key,
+    super.key,
     required this.labelText,
     required this.hintText,
     this.iconPath,
     required this.textColor,
     required this.borderColor,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
