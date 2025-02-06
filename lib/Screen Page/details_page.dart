@@ -64,26 +64,19 @@ class DetailsPage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => DetailsPage()));
-                    },
-                    child: TicketCard(
-                        endText: 'Dhaka',
-                        bottomColor: Color(0xFFCE3B16),
-                        DuTimeColor: Color(0xFFCE3B16),
-                        DutTime: '16 hrs',
-                        startTime: '12:30 AM',
-                        startText: 'Hatia',
-                        endTime: '4:30 PM',
-                        startColor: Color(0xFFCE3B16),
-                        endColor: Color(0xFFFBBB00),
-                        bottomText: 'farhan 7',
-                        middleImage: 'assets/images/imageThree.png',
-                        price: 'ট 1500')),
+                TicketCard(
+                    endText: 'Dhaka',
+                    bottomColor: Color(0xFFCE3B16),
+                    DuTimeColor: Color(0xFFCE3B16),
+                    DutTime: '16 hrs',
+                    startTime: '12:30 AM',
+                    startText: 'Hatia',
+                    endTime: '4:30 PM',
+                    startColor: Color(0xFFCE3B16),
+                    endColor: Color(0xFFFBBB00),
+                    bottomText: 'farhan 7',
+                    middleImage: 'assets/images/imageThree.png',
+                    price: 'ট 1500'),
                 SizedBox(
                   height: 20,
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_booking/Screen%20Page/login_screen.dart';
+import 'package:ticket_booking/Screen%20Page/main_home.dart';
 import 'package:ticket_booking/widgets/style.dart';
 
 class CreateAccount extends StatelessWidget {
@@ -177,7 +178,7 @@ class CreateAccount extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => CreateAccount()));
+                              builder: (context) => MainHomePage()));
                     },
                     child: Center(
                       child: Container(
@@ -189,7 +190,7 @@ class CreateAccount extends StatelessWidget {
                         ),
                         child: Center(
                           child: Text(
-                            "create Account",
+                            "Create Account",
                             style: TextStyle(
                               fontFamily: montRegular,
                               color: Color(0xFFFFFFFF),
