@@ -7,7 +7,8 @@ class CustomTextField2 extends StatefulWidget {
   final Image? prefixIcon;
   final Color? colorM;
 
-  CustomTextField2({
+  const CustomTextField2({
+    super.key,
     this.hintMain,
     this.hintSub,
     this.labelHint,

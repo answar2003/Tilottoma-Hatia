@@ -156,8 +156,8 @@ class MainHomePage extends StatelessWidget {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   CustomDetailsTextFieldHome(
-                                    labelText: 'Qouta',
-                                    hintText: 'General Quota',
+                                    labelText: 'Travellar',
+                                    hintText: '1 Adult',
                                     textColor: Colors.white,
                                     borderColor: Colors.white,
                                   ),
@@ -165,9 +165,8 @@ class MainHomePage extends StatelessWidget {
                                     width: 10,
                                   ),
                                   CustomDetailsTextFieldHome(
-                                    labelText: 'Coach',
-                                    hintText: 'S1',
-                                    iconPath: 'assets/images/Railcar.png',
+                                    labelText: 'Quata',
+                                    hintText: 'General Quata',
                                     textColor: Colors.white,
                                     borderColor: Colors.white,
                                   ),

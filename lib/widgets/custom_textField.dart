@@ -8,7 +8,8 @@ class CustomTextField extends StatefulWidget {
   final Color? colorM;
   final Color? colorS;
 
-  CustomTextField({
+  const CustomTextField({
+    super.key,
     this.hintMain,
     this.hintSub,
     this.labelHint,
