@@ -100,7 +100,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                         TextSpan(
                           text: "${widget.hintMain}\n",
                           style: TextStyle(
-                            fontSize: 20, // Bigger size
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: widget.colorM ?? Colors.blue,
                           ),
@@ -109,7 +109,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                         TextSpan(
                           text: widget.hintSub,
                           style: TextStyle(
-                            fontSize: 13, // Smaller size
+                            fontSize: 13,
                             color: widget.colorS ?? Colors.white70,
                           ),
                         ),

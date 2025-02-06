@@ -110,14 +110,14 @@ class _CustomTextField2State extends State<CustomTextField2> {
                             padding: EdgeInsets.symmetric(
                                 horizontal: 6, vertical: 3),
                             decoration: BoxDecoration(
-                              color: Color(0xFF03C3FF), // Set background color
+                              color: Color(0xFF03C3FF),
                               borderRadius: BorderRadius.circular(4),
                             ),
                             child: Text(
                               widget.hintSub!,
                               style: TextStyle(
-                                fontSize: 13, // Smaller size
-                                color: Colors.white, // Text color
+                                fontSize: 13,
+                                color: Colors.white,
                               ),
                             ),
                           ),
